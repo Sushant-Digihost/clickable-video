@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.cursor {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.cursor img {
+  height: 50%;
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  padding: 2em;
+}
+
+.nav-item:nth-child(1) {
+  flex: 3;
+}
+
+.nav-item:nth-child(2) {
+  flex: 2;
+  display: flex;
+}
+.nav-item:nth-child(2) p {
+  flex: 1;
+}
+
+p {
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.header {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.header h1 {
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14vw;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+}
+
+video, img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video-container, .img-container {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%);
+  pointer-events: none;
+}/*# sourceMappingURL=style.css.map */
